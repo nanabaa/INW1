@@ -1,0 +1,106 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    margin: 50px;
+}
+header img{
+width: 30px;
+height: 30px;
+}
+
+h2{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2.3rem;
+}
+p{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 15pt;
+}
+
+
+.cor1{
+    background-color: #9C66F4;
+}
+.cor2{
+    background-color: #B283FE;
+}
+.cor3{
+    background-color: #BE97FF;
+}
+.cor4{
+    background-color: #CDB1FA;
+}
+.cor5{
+    background-color: #E0CDFF;
+}
+.cor6{
+    background-color: #EEE3FF;
+}
+
+
+.buttonGradiente{
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 265px;
+    height: 60px;
+    margin: 10px;
+}
+
+button {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 1rem;
+}
+nav{
+    padding: 5px;
+    border-top: 1px black;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #ffff;
+}
+
+nav ul{
+    border-top: 1px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ul img{
+    width: 32px;
+    height: 32px;
+}
+img{
+    width: 120px;
+    height: 120px;
+}
+
+.Foto{
+display: flex;
+justify-content: space-between;
+padding: 40px;
+}
+
+
+
+.Info{
+    display: flex;
+    flex-direction: column;
+}
+
+.Resultado{
+ margin-left:20px ;
+}
+
+input{
+    margin-bottom: 20px;
+    background-color: #FFBC58;
+    width:250px;
+    height:30px;
+    border: none;
+    border-radius: 8px;
+    color:#591717 ;
+}

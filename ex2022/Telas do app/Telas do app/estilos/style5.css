@@ -1,0 +1,272 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+}
+header img{
+    width: 30px;
+    height: 30px;
+}
+h2{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2.3rem;
+}
+h3{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.4rem;
+}
+p{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 15pt;
+}
+a{
+    text-decoration: none;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 15pt;
+}
+img{
+    width: 120px;
+    height: 120px;
+}
+
+.biruta ul{
+    display: flex;
+    flex-direction: row;
+}
+.biruta ul img{
+    width: 24px;
+    height: 24px;   
+}
+
+.descrição{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.descrição p{
+    padding: 20px;
+}
+
+.descrição img{
+    width: 100px;
+    height: 130px;
+}
+
+.artistas{
+    padding: 20px;
+    display: flex;
+    flex-direction: column
+}
+
+.perfil-artista{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    margin-right: 200px;
+    background-color: #FBCF8E;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: row
+}
+
+.perfil-artista h3{
+    margin-left: 5px;
+}
+
+.perfil-artista img{
+    border-radius: 20px;
+    width: 50;
+    height: 50;
+    margin-left: 5px;
+}
+
+.avaliação{
+    background-color:#E6D7FF;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.comentario img{
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+}
+.Botãoav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+}
+.Botãoav button{
+    background: rgb(50, 248, 255);
+    outline: none;
+    font-size: 25px;
+    font-weight: 300;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.Biruta{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+nav{
+    padding: 5px;
+    border-top: 1px black;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #ffff;
+}
+
+nav ul{
+    border-top: 1px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ul img{
+    width: 32px;
+    height: 32px;
+}
+
+.popup{
+    width:150px;
+    background: hsl(279, 100%, 85%);
+    border-radius: 10px;
+    position: absolute;
+    top:0;
+    left:50%;   
+    transform: translate(-50%, -50%) scale(0.01);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #000100;
+    box-shadow: 0 2px 0 rgb(174, 174, 174);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.popUp2{
+    width:150px;
+    background: hsl(279, 100%, 85%);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left:50%;   
+    transform: translate(-50%, -50%) scale(0.01);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #000100;
+    box-shadow: 0 2px 0 rgb(174, 174, 174);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.popup h2{
+    font-size:18px ;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+    background: rgb(50, 248, 255);
+    color: rgb(29, 29, 29);
+    border: 0;
+    outline: none;
+    font-size: 11px;
+}
+.option{
+    display: flex;
+    align-items: center;
+}
+.option button{
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 0 rgb(174, 174, 174);
+    
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popUp2text{
+    width: 150px;
+    height: 50px;
+    align-items: center;
+}
+.popUp2 button{
+    background-color: rgb(50, 248, 255);
+}
+.open-popup2{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.perfil{
+    display: flex;
+    align-items: center
+}
+.perfil p{
+ margin-left: 10px;
+}
+
+
+a:hover {
+    color: rgb(53, 53, 53);
+    transition: 0.4s linear;
+}
+
+.estrelas{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.rating {
+    float: left;
+}
+.rating input[type=radio]{
+    display: none;
+}
+.rating > label {
+    color: #90A0A3;
+    font-size: 2em;
+    cursor: pointer;
+    float: right;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #F79426;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #FECE31;
+}
+
+.material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 50,
+    'GRAD' 0,
+    'opsz' 48
+}

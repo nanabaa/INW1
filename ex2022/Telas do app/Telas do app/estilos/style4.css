@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    margin: 50px;
+}
+header img{
+width: 30px;
+height: 30px;
+}
+
+h2{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2.3rem;
+}
+p{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 15pt;
+}
+main{
+    width:100%;
+}
+
+
+button {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 1rem;
+}
+nav{
+    padding: 5px;
+    border-top: 1px black;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #ffff;
+}
+
+nav ul{
+    border-top: 1px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ul img{
+    width: 32px;
+    height: 32px;
+}
+img{
+    width: 120px;
+    height: 120px;
+}
+
+.Foto{
+display: flex;
+padding: 20px;
+
+}
+
+
+.Biruta{
+    display: flex;
+    flex-direction: column; 
+}
+.Info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.Resultado{
+ margin-left:20px ;
+}
+
+input{
+    margin-bottom: 20px;
+    background-color: #FFBC58;
+    width:250px;
+    height:30px;
+    border: none;
+    border-radius: 8px;
+    color:#591717 ;
+}
+
+button{
+    width: auto;
+    background-color: #D0E8E3;
+    border: none;
+    border-radius: 8px;
+}
+

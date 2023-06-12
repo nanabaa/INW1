@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2.3rem;
+    margin: 20px;
+}
+button{
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 165px;
+    height: 60px;
+    background-color: #B286FB;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 11pt;
+}
+
+.recomendação{
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+align-items: center;
+    padding: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+    background-color: #E6D7FF;
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 15pt;
+border-radius: 8px;
+}
+

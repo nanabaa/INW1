@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  </title>
+    <link rel="stylesheet" href="../estilos/reset.css">
+    <link rel="stylesheet" href="../estilos/style5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
+</head>
+<body>
+    <header>
+        <a href="5-fotografia.html">
+            <img src="../imgs/seta.png" alt="">
+        </a>
+        <h2>Madonna</h2>
+    </header>
+<Main>
+
+<div class="descrição">
+    <img src="../imgs/madonna.jpg " alt="">
+    <p>Texto Muito biruta, lele da cuca, coco pequeno saiu do chao</p>
+</div>
+
+<div class="artistas">
+    <h2>
+        Artistas
+    </h2>
+    <ul>
+        <li>
+            <div class="perfil-artista">
+                <img src="../imgs/madonna.jpg" alt="">
+                <h3>Artista 1</h3>
+            </div>
+        </li>        
+        <li>
+            <div class="perfil-artista">
+                <img src="../imgs/madonna.jpg" alt="">
+                <h3>Artista 2</h3>
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+<div class="avaliações">
+<div class="Botãoav">
+    <h2>Avaliações</h2>
+    <button class="btn" onclick="OpenPopUp()">+</button>
+</div>
+<div class="avaliação">
+
+    <div class="comentario">
+        <div class="perfil">
+            <img src="../imgs/madonna.jpg" alt="">
+            <p>Antonio</p>
+        </div>
+
+        <div class="biruta">
+        <ul>
+            <li><img src="../imgs/Estrela!.png" alt=""></li>
+            <li><img src="../imgs/Estrela!.png" alt=""></li>
+            <li><img src="../imgs/Estrela!.png" alt=""></li>
+            <li><img src="../imgs/Estrela!.png" alt=""></li>
+            <li><img src="../imgs/Estrela!.png" alt=""></li>
+        </ul>
+        </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis recusandae optio, hic ad vnt?</p>
+    </div>
+</div>
+<div class="popup" id="popup">
+    <h2>Voce gostaria de avaliar essa exposicao?</h2>
+    <div class="option">
+        <button type="button" onclick="AvaliacaoPopUp()">Sim</button>
+        <button type="button" onclick="ClosePopUp()">Nao</button>
+    </div>
+</div>
+</div>
+
+<div>
+<div class="popUp2" id="popup2">
+    <h3>Como gostaria de avalia-la</h3>
+    <div class="Biruta">
+        <form class="rating estrelas">
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label class="star material-symbols-rounded" for="star1">star</label>
+           
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label class="star material-symbols-rounded" for="star2">star</label> 
+           
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label class="star material-symbols-rounded" for="star3">star</label>
+           
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label class="star material-symbols-rounded" for="star4">star</label>
+
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label class="star material-symbols-rounded mascara" for="star5" >star</label>
+                    
+        </form>
+    <input type="text" class="popUp2text ">
+    <button type="button" onclick="CloseAvaliacaoPopUp()">Enviar</button>
+</div>
+</Main>
+<nav>
+    <ul>
+        <li>
+            <a href="">
+                <img src="../imgs/perfilIcon.png" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="2-tela-inicial.html">
+                <img src="../imgs/homeIcon.png" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="../imgs/menuIcon.png" alt="">
+            </a>
+        </li>
+    </ul>
+
+</nav>
+
+<script>
+    let popup = document.getElementById("popup");
+    let popup2 = document.getElementById("popup2")
+
+    function OpenPopUp(){
+        popup.classList.add("open-popup");
+    }
+
+    function ClosePopUp(){
+        popup.classList.remove("open-popup");
+    }
+    function AvaliacaoPopUp(){
+        popup.classList.remove("open-popup");
+        popup2.classList.add("open-popup2");
+    }
+    function CloseAvaliacaoPopUp(){
+        popup2.classList.remove("open-popup2")
+    }
+</script>
+</body>
+</html>

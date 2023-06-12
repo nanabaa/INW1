@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    margin-top: 100px;
+}
+
+h2{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2.3rem;
+    margin: 20px;
+}
+
+button{
+    margin-top: 100px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 165px;
+    height: 60px;
+    background-color: #FFBC58;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 15pt;
+}
